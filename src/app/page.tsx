@@ -1,69 +1,123 @@
-import Image from "next/image";
+import type { Metadata } from "next";
+import Link from "next/link";
+import { selectedWork, selectedWritings } from "../content/site";
+
+export const metadata: Metadata = {
+  title: "Sabbir Ahmed Minhaz (SAM) - Co-Founder, CTO & AI Engineer",
+  description:
+    "Sabbir Ahmed Minhaz (SAM) is a Co-Founder, CTO and AI Engineer in Bangladesh, building AI workflow automations, voice agents and intelligent systems at CodeMyPixel.",
+  alternates: { canonical: "https://sabbirminhaz.com" },
+};
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+    <div className="pt-16 sm:pt-24 pb-8">
+      {/* hero */}
+      <section>
+        <p className="mono text-sm rise rise-1" style={{ color: "var(--accent)" }}>
+          hello, i am
+        </p>
+        <h1
+          className="rise rise-2 mt-3 text-4xl sm:text-6xl font-bold tracking-tight"
+          style={{ lineHeight: 1.1 }}
+        >
+          Sabbir Ahmed Minhaz<span className="caret">_</span>
+        </h1>
+        <p className="rise rise-3 mt-5 text-lg sm:text-xl" style={{ color: "var(--muted)" }}>
+          Co-Founder, CTO &amp; AI Engineer
+        </p>
+        <p
+          className="rise rise-4 mt-6 max-w-xl text-base leading-7"
+          style={{ color: "var(--muted)" }}
+        >
+          I build AI systems that do real work. At{" "}
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://codemypixel.com"
             target="_blank"
             rel="noopener noreferrer"
+            className="link-accent"
           >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
+            CodeMyPixel
           </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          , I lead engineering on workflow automations, voice agents and
+          document intelligence used by businesses every day. Based in
+          Bangladesh, working worldwide.
+        </p>
+        <div className="rise rise-4 mt-8 flex flex-wrap gap-3">
+          <Link href="/work" className="tag mono text-sm">
+            see the work
+          </Link>
+          <Link href="/writings" className="tag mono text-sm">
+            read the writings
+          </Link>
         </div>
-      </main>
+      </section>
+
+      {/* selected work */}
+      <section className="mt-20">
+        <div className="flex items-baseline justify-between mb-2">
+          <h2 className="mono text-sm" style={{ color: "var(--faint)" }}>
+            selected work
+          </h2>
+          <Link href="/work" className="mono text-sm link-accent">
+            all work →
+          </Link>
+        </div>
+        <div>
+          {selectedWork.map((p) => (
+            <Link key={p.title} href="/work" className="row block py-5">
+              <div className="flex items-baseline justify-between gap-4">
+                <h3 className="row-title text-lg font-semibold">{p.title}</h3>
+                <span className="mono text-xs shrink-0" style={{ color: "var(--faint)" }}>
+                  {p.year}
+                </span>
+              </div>
+              <p className="mt-1 text-sm" style={{ color: "var(--muted)" }}>
+                {p.tagline}
+              </p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* selected writings */}
+      <section className="mt-16">
+        <div className="flex items-baseline justify-between mb-2">
+          <h2 className="mono text-sm" style={{ color: "var(--faint)" }}>
+            selected writings
+          </h2>
+          <Link href="/writings" className="mono text-sm link-accent">
+            all writings →
+          </Link>
+        </div>
+        <div>
+          {selectedWritings.map((w) => (
+            <Link key={w.title} href="/writings" className="row block py-5">
+              <div className="flex items-baseline justify-between gap-4">
+                <h3 className="row-title text-base font-medium">{w.title}</h3>
+                <span className="mono text-xs shrink-0" style={{ color: "var(--faint)" }}>
+                  {w.date}
+                </span>
+              </div>
+              <p className="mt-1 text-sm" style={{ color: "var(--muted)" }}>
+                {w.excerpt}
+              </p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* now */}
+      <section className="mt-16">
+        <h2 className="mono text-sm mb-2" style={{ color: "var(--faint)" }}>
+          now
+        </h2>
+        <p className="text-sm leading-7 max-w-xl" style={{ color: "var(--muted)" }}>
+          Shipping agentic automations at CodeMyPixel. Writing about AI
+          engineering, latency and the boring parts that make systems work.
+          Trying to become the most recognizable AI engineer in Bangladesh.
+        </p>
+      </section>
     </div>
   );
 }
