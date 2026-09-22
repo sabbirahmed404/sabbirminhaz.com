@@ -11,7 +11,7 @@ export interface Writing {
   title: string;
   date: string;
   excerpt: string;
-  href: string;
+  href?: string;
 }
 
 export const selectedWork: Project[] = [
@@ -41,19 +41,47 @@ export const selectedWork: Project[] = [
   },
 ];
 
+export const earlierWork: Project[] = [
+  {
+    title: "Brain lesion detection with YOLO & U-Net",
+    tagline: "3D deep learning research",
+    detail:
+      "Trained on 3D MRI scans of high-grade and low-grade gliomas. Evaluated across architectures including ResNet3D, reaching 0.88 mAP and 0.71 Dice coefficient on 1024x1024 axial slices.",
+    stack: ["deep learning", "computer vision", "PyTorch"],
+    href: "https://github.com/sabbirahmed404/Brain_Tumor_Detection_Using_YOLO",
+    year: "2024",
+  },
+  {
+    title: "TextGPT & IQR Codes",
+    tagline: "AI chat product, end-to-end",
+    detail:
+      "Designed and built the full product experience: admin dashboard, chat interfaces and QR-code flows, plus onboarding and a scalable multilingual architecture on the OpenAI API.",
+    stack: ["Next.js", "TypeScript", "OpenAI API", "Firebase"],
+    href: "https://codemypixel.com/textgpt-case-study/",
+    year: "2024",
+  },
+  {
+    title: "Top Floor Trends",
+    tagline: "SaaS content platform for a UK media agency",
+    detail:
+      "Complete user journey from landing pages to interactive artist dashboards: real-time leaderboards, API-driven streaming and social stats, campaign analytics, AI-assisted content tools.",
+    stack: ["Next.js", "React 19", "OpenAI API", "Stripe"],
+    href: "https://codemypixel.com/top-floor-trends-case-study/",
+    year: "2024",
+  },
+];
+
 export const selectedWritings: Writing[] = [
   {
     title: "The latency budget: how we got voice agents under one second",
     date: "2026-09",
     excerpt:
       "Every millisecond between the caller stopping and the agent answering is trust leaking out. Here is where the time actually goes.",
-    href: "/writings",
   },
   {
     title: "Most AI projects fail at the workflow, not the model",
     date: "2026-08",
     excerpt:
       "The model is rarely the bottleneck. The boring plumbing around it is.",
-    href: "/writings",
   },
 ];

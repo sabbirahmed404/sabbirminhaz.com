@@ -22,6 +22,14 @@ export default function Footer() {
           >
             github
           </a>
+          <a
+            href="https://linkedin.com/in/msabbir-ahmed"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link-accent"
+          >
+            linkedin
+          </a>
           <a href="mailto:sabbir@codemypixel.com" className="link-accent">
             email
           </a>
