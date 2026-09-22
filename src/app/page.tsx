@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Sabbir Ahmed Minhaz (SAM) - Co-Founder, CTO & AI Engineer",
   description:
     "Sabbir Ahmed Minhaz (SAM) is a Co-Founder, CTO and AI Engineer in Bangladesh, building AI workflow automations, voice agents and intelligent systems at CodeMyPixel.",
-  alternates: { canonical: "https://sabbirminhaz.com" },
+  alternates: { canonical: "https://www.sabbirminhaz.com" },
 };
 
 export default function Home() {

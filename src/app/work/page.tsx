@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Work",
   description:
     "Selected work by Sabbir Ahmed Minhaz (SAM): AI workflow automations, voice agents and legal AI products built at CodeMyPixel.",
-  alternates: { canonical: "https://sabbirminhaz.com/work" },
+  alternates: { canonical: "https://www.sabbirminhaz.com/work" },
 };
 
 function ProjectCard({ p, i }: { p: Project; i: number }) {

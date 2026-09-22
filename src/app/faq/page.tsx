@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: "FAQ",
   description:
     "Frequently asked questions about Sabbir Ahmed Minhaz (SAM): AI engineer, Co-Founder and CTO of CodeMyPixel, and his work on AI automation.",
-  alternates: { canonical: "https://sabbirminhaz.com/faq" },
+  alternates: { canonical: "https://www.sabbirminhaz.com/faq" },
 };
 
 const faqs = [

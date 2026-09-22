@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Writings",
   description:
     "Writings by Sabbir Ahmed Minhaz (SAM) on AI models, AI agents, and building intelligent systems. Published on the CodeMyPixel blog.",
-  alternates: { canonical: "https://sabbirminhaz.com/writings" },
+  alternates: { canonical: "https://www.sabbirminhaz.com/writings" },
 };
 
 export default function WritingsPage() {

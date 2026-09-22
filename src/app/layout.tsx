@@ -3,7 +3,7 @@ import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-const SITE_URL = "https://sabbirminhaz.com";
+const SITE_URL = "https://www.sabbirminhaz.com";
 const NAME = "Sabbir Ahmed Minhaz";
 const TITLE = "Co-Founder, CTO & AI Engineer";
 
