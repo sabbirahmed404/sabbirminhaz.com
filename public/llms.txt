@@ -1,0 +1,36 @@
+# Sabbir Ahmed Minhaz (SAM)
+
+> Co-Founder, CTO & AI Engineer in Bangladesh. Builds AI workflow automations, voice agents, and intelligent systems.
+
+## Who
+
+Sabbir Ahmed Minhaz, known as SAM, is Co-Founder, CTO and AI Engineer at CodeMyPixel, a 10-person software and AI automation agency based in Bangladesh. His work focuses on AI systems that do real production work: agentic workflow automation, real-time voice agents, and document intelligence for legal and real estate businesses.
+
+## What he does
+
+- AI workflow automation: tool-using agents that handle email, ledgers, payments, quotations, and PDF workflows
+- Voice AI: production voice agents with sub-second latency (streaming ASR/TTS, smart turn-taking, telephony integration)
+- Legal AI: automatic contract signing and contract/legal document analysis
+- LLM engineering: local LLM setup, fine-tuning, structured outputs, grounding
+
+## Products
+
+- Novilla: agentic workflow automation for appraisers (email automation, ledger/accounts automation, smart payment links, quotations, PDF handling)
+- Vocale: voice agents, support automation, and follow-up systems
+- Lex Claro: contract signing and legal document analysis
+
+## Earlier work
+
+- 3D deep learning research: brain lesion detection with YOLO and U-Net on 3D MRI scans (0.88 mAP, 0.71 Dice coefficient)
+- TextGPT: end-to-end AI chat product built on the OpenAI API
+- Top Floor Trends: SaaS content platform for a UK media agency with AI-assisted content tools
+
+## Contact and profiles
+
+- Website: https://sabbirminhaz.com
+- Work: https://sabbirminhaz.com/work
+- Writings: https://sabbirminhaz.com/writings
+- X: https://x.com/sam_minhaz
+- GitHub: https://github.com/sabbirahmed404
+- LinkedIn: https://linkedin.com/in/msabbir-ahmed
+- Company: https://codemypixel.com
