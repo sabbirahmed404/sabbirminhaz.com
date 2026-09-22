@@ -4,7 +4,7 @@ import { selectedWritings } from "../../content/site";
 export const metadata: Metadata = {
   title: "Writings",
   description:
-    "Writings by Sabbir Ahmed Minhaz (SAM) on AI engineering, voice agents, workflow automation and building intelligent systems.",
+    "Writings by Sabbir Ahmed Minhaz (SAM) on AI models, AI agents, and building intelligent systems. Published on the CodeMyPixel blog.",
   alternates: { canonical: "https://sabbirminhaz.com/writings" },
 };
 
@@ -15,16 +15,30 @@ export default function WritingsPage() {
         writings
       </p>
       <h1 className="rise rise-2 mt-3 text-3xl sm:text-4xl font-bold tracking-tight">
-        Notes on building AI systems
+        Notes on AI systems
       </h1>
       <p className="rise rise-3 mt-4 max-w-xl text-base leading-7" style={{ color: "var(--muted)" }}>
-        Short, practical notes from the work. No hype, just what actually
-        happened.
+        Essays and hands-on reviews, published on the{" "}
+        <a
+          href="https://codemypixel.com/blog"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="link-accent"
+        >
+          CodeMyPixel blog
+        </a>
+        . No hype, just what actually happened.
       </p>
 
       <div className="mt-12">
         {selectedWritings.map((w, i) => (
-          <article key={w.title} className={`py-8 row rise rise-${Math.min(i + 1, 4)}`}>
+          <a
+            key={w.title}
+            href={w.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`row block py-8 rise rise-${Math.min(i + 1, 4)}`}
+          >
             <div className="flex items-baseline justify-between gap-4">
               <h2 className="row-title text-lg font-medium">{w.title}</h2>
               <span className="mono text-xs shrink-0" style={{ color: "var(--faint)" }}>
@@ -34,10 +48,10 @@ export default function WritingsPage() {
             <p className="mt-2 text-sm leading-7 max-w-2xl" style={{ color: "var(--muted)" }}>
               {w.excerpt}
             </p>
-            <p className="mono text-xs mt-3" style={{ color: "var(--faint)" }}>
-              full post coming soon
+            <p className="mono text-xs mt-3 link-accent">
+              read the full post →
             </p>
-          </article>
+          </a>
         ))}
       </div>
     </div>

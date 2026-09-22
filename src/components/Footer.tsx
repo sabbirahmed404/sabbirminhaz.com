@@ -6,6 +6,9 @@ export default function Footer() {
           © {new Date().getFullYear()} sabbir ahmed minhaz
         </p>
         <div className="flex items-center gap-5 mono text-xs" style={{ color: "var(--muted)" }}>
+          <a href="/faq" className="link-accent">
+            faq
+          </a>
           <a
             href="https://x.com/sam_minhaz"
             target="_blank"

@@ -73,15 +73,17 @@ export const earlierWork: Project[] = [
 
 export const selectedWritings: Writing[] = [
   {
-    title: "The latency budget: how we got voice agents under one second",
-    date: "2026-09",
+    title: "Claude Opus 5.5: The New Most Powerful AI Model",
+    date: "2026-09-23",
     excerpt:
-      "Every millisecond between the caller stopping and the agent answering is trust leaking out. Here is where the time actually goes.",
+      "Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index, beating GPT-6 Astra and Fable 5.1 on coding and knowledge benchmarks, while running about 40% cheaper and 30% faster than Opus 5.",
+    href: "https://codemypixel.com/blog/claude-opus-5-5-most-powerful-ai-model",
   },
   {
-    title: "Most AI projects fail at the workflow, not the model",
-    date: "2026-08",
+    title: "We Used Meta Muse for Several Days. Here's What It's Actually Like",
+    date: "2026-09-19",
     excerpt:
-      "The model is rarely the bottleneck. The boring plumbing around it is.",
+      "A hands-on review of Meta's Muse personal agent: what the team actually delegated to it, how the Secure VM architecture works, and where it still gets stuck.",
+    href: "https://codemypixel.com/blog/meta-muse-personal-ai-agent-1-billion-tokens",
   },
 ];

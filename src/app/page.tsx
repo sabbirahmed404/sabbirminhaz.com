@@ -92,7 +92,13 @@ export default function Home() {
         </div>
         <div>
           {selectedWritings.map((w) => (
-            <Link key={w.title} href="/writings" className="row block py-5">
+            <a
+              key={w.title}
+              href={w.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="row block py-5"
+            >
               <div className="flex items-baseline justify-between gap-4">
                 <h3 className="row-title text-base font-medium">{w.title}</h3>
                 <span className="mono text-xs shrink-0" style={{ color: "var(--faint)" }}>
@@ -102,7 +108,7 @@ export default function Home() {
               <p className="mt-1 text-sm" style={{ color: "var(--muted)" }}>
                 {w.excerpt}
               </p>
-            </Link>
+            </a>
           ))}
         </div>
       </section>
