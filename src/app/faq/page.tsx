@@ -10,11 +10,11 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "Who is Sabbir Ahmed Minhaz?",
-    a: "Sabbir Ahmed Minhaz, known as SAM, is a Co-Founder, CTO and AI Engineer at CodeMyPixel, a software and AI automation agency based in Bangladesh. He builds AI systems that do real production work, including agentic workflow automations, real-time voice agents, and document intelligence.",
+    a: "Sabbir Ahmed Minhaz, known as SAM, is a Co-Founder, CTO and AI Engineer at CodeMyPixel, a software and AI automation agency based in Bangladesh. He builds production AI systems, including agentic workflow automations, real-time voice agents, and document intelligence.",
   },
   {
     q: "What does Sabbir Ahmed Minhaz do?",
-    a: "He leads engineering at CodeMyPixel, where his team ships AI workflow automations for businesses in legal, real estate, and other industries. His focus areas are AI agents, voice AI with sub-second latency, and LLM engineering including local model setup and fine-tuning.",
+    a: "He leads engineering at CodeMyPixel, where his team ships AI workflow automations for businesses in legal, real estate, and other industries. His focus areas are AI agents, real-time voice AI, and LLM engineering including local model setup and fine-tuning.",
   },
   {
     q: "What is CodeMyPixel?",
@@ -22,11 +22,11 @@ const faqs = [
   },
   {
     q: "What are Novilla, Vocale, and Lex Claro?",
-    a: "They are products built by Sabbir Ahmed Minhaz and the CodeMyPixel team. Novilla is an agentic workflow automation tool for appraisers. Vocale provides voice agents, support automation, and follow-up systems. Lex Claro handles automatic contract signing and AI analysis of legal documents.",
+    a: "They are products built by the CodeMyPixel team, where Sabbir leads engineering. Novilla is an agentic workflow automation tool for appraisers. Vocale provides voice agents, support automation, and follow-up systems. Lex Claro handles automatic contract signing and AI analysis of legal documents.",
   },
   {
     q: "Where is Sabbir Ahmed Minhaz based?",
-    a: "He is based in Dhaka, Bangladesh, and works with clients worldwide.",
+    a: "He is based in Bangladesh, and works with clients worldwide.",
   },
   {
     q: "How can I contact Sabbir Ahmed Minhaz?",
